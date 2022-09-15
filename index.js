@@ -1,6 +1,7 @@
-import { runLoop, queueEvent } from "./src/core/event_loop.js";
+import { runLoop, queueEvent } from "./src/core/event_loop2.js";
 
 const main = () => {
+
   let start = new Date().getTime();
   queueEvent(() => console.log('First queueEvent call.'), 10000);
   queueEvent(() => console.log("Event 1 is queued."), 2000);
